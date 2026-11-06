@@ -1,0 +1,61 @@
+# Ile minut gracz musi spędzić na serwerze, aby odebrać nagrodę
+required-playtime-minutes: 60
+
+# Bot Discord. Token wpisz TYLKO na serwerze (nigdy do repozytorium GitHub!)
+# Alternatywa: zmienna środowiskowa NAGRODA_DISCORD_TOKEN
+discord:
+  token: "WKLEJ_TOKEN_TUTAJ"
+  guild-id: "1558868120867840232"
+  channel-id: "1565421084847771869"
+
+messages:
+  need-time: "&cMusisz spędzić jeszcze %time% na serwerze"
+  success: "&aPomyślnie odebrano nagrodę za %platform%"
+  already-claimed: "&cOdebrałeś już swoją nagrodę!"
+  link-sent: "&eKliknij tutaj, aby otworzyć link: &b&n%url%"
+  pending: "&eWeryfikacja w toku... pozostało ok. %time%"
+  waiting-api: "&eWejdź na kanał &f#odbierz-nagrode &ei wpisz swój nick, a potem wróć tutaj."
+  linked-notify: "&aPołączono konto: &f%platform%&a! Możesz odebrać nagrodę w /nagroda"
+
+# verification:
+#   AUTO - po kliknięciu linku i odczekaniu auto-seconds konto jest oznaczane jako połączone
+#   BOT  - połączenie potwierdza bot Discord (gracz wpisuje nick na kanale)
+platforms:
+  discord:
+    slot: 11
+    material: PAPER
+    name: "&#5865F2&lɴᴀɢʀᴏᴅᴀ ᴅɪꜱᴄᴏʀᴅ"
+    display: "Discord"
+    url: "https://dc.firestar.pl"
+    verification: BOT
+    auto-seconds: 90
+    rewards:
+      - "&fᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &#FF6700ꜰ&#FF5600ɪ&#FF4500ʀ&#FF3400ᴇ&#FF2200ʙ&#FF1100ᴏ&#FF0000x"
+      - "&fʀᴀɴɢᴀ &5ᴍᴠɪᴘ &fɴᴀ 𝟥 ᴅɴɪ"
+    commands:
+      - "getcase give %player% firebox 1"
+      - "lp user %player% parent addtemp mvip 3d"
+  tiktok:
+    slot: 13
+    material: PAPER
+    name: "&#DD00FF&lɴ&#E014FF&lᴀ&#E227FF&lɢ&#E53BFF&lʀ&#E74EFF&lᴏ&#EA62FF&lᴅ&#ED76FF&lᴀ &#F29DFF&lᴛ&#F5B1FF&lɪ&#F7C4FF&lᴋ&#FAD8FF&lᴛ&#FCEBFF&lᴏ&#FFFFFF&lᴋ"
+    display: "TikTok"
+    url: "https://www.tiktok.com/@wlotnyy"
+    verification: AUTO
+    auto-seconds: 90
+    rewards:
+      - "&fᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &#FF6700ꜰ&#FF5600ɪ&#FF4500ʀ&#FF3400ᴇ&#FF2200ʙ&#FF1100ᴏ&#FF0000x"
+    commands:
+      - "getcase give %player% firebox 1"
+  youtube:
+    slot: 15
+    material: PAPER
+    name: "&#FF0000&lɴ&#FD0808&lᴀ&#FA0F0F&lɢ&#F81717&lʀ&#F61F1F&lᴏ&#F32626&lᴅ&#F12E2E&lᴀ &#EC3D3D&lʏ&#EA4545&lᴏ&#E74C4C&lᴜ&#E55454&lᴛ&#E35C5C&lᴜ&#E06363&lʙ&#DE6B6B&lᴇ"
+    display: "YouTube"
+    url: "https://www.youtube.com/@vhis0"
+    verification: AUTO
+    auto-seconds: 90
+    rewards:
+      - "&fᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &#FF6700ꜰ&#FF5600ɪ&#FF4500ʀ&#FF3400ᴇ&#FF2200ʙ&#FF1100ᴏ&#FF0000x"
+    commands:
+      - "getcase give %player% firebox 1"
